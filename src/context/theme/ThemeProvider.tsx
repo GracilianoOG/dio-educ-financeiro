@@ -10,7 +10,9 @@ export const ThemeProvider = ({ children }: PropsWithChildren) => {
       return storedTheme
     }
 
-    return 'light'
+    const prefersDarkTheme = window.matchMedia('(prefers-color-scheme: dark)').matches
+
+    return prefersDarkTheme ? 'dark' : 'light'
   })
 
   useEffect(() => {
