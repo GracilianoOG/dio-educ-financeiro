@@ -4,3 +4,14 @@
 @import '@fontsource/inter/700.css';
 @import '@fontsource/inter/800.css';
 @import './styles/theme.css';
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+    height: 100%;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
+    width: 100%;
+  }
+}
