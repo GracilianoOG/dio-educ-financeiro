@@ -1,7 +1,9 @@
+import { SimulationHero } from '@/components/features/Simulation/Hero'
+
 export const SimulationFormPage = () => {
   return (
-    <div>
-      <h1>Simulation Form Page</h1>
-    </div>
+    <main className="mx-auto max-w-xl px-4 py-10 sm:py-14">
+      <SimulationHero />
+    </main>
   )
 }
