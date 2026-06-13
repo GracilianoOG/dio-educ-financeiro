@@ -64,6 +64,7 @@ export const FormStep = ({
           )}
           <Button
             type="submit"
+            disabled={!inputValue}
             variant="primary"
             icon={!submitButtonProps ? ArrowRight : undefined}
             className="order-1 flex-1 sm:order-2"
