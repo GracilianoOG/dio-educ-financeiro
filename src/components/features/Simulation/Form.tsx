@@ -3,8 +3,10 @@ import { useState } from 'react'
 import { FormStep } from '@/components/features/Simulation/FormStep'
 import { StepProgress } from '@/components/features/Simulation/Progress'
 import { type SimulationFormData, simulationFormSteps } from '@/data/simulation'
+import { useSimulationStorage } from '@/hooks/useSimulationStorage'
 
 export const SimulationForm = () => {
+  const { saveFormData } = useSimulationStorage()
   const [currentStepIndex, setCurrentStepIndex] = useState(0)
   const [formData, setFormData] = useState<SimulationFormData>({} as SimulationFormData)
   const totalSteps = simulationFormSteps.length
@@ -15,6 +17,7 @@ export const SimulationForm = () => {
     setFormData(updatedFormData)
 
     if (currentStepIndex + 1 > totalSteps - 1) {
+      saveFormData(updatedFormData)
       return
     }
 
