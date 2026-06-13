@@ -10,7 +10,12 @@ export const SimulationForm = () => {
       <FormStep
         icon={PiggyBank}
         title="Renda mensal bruta"
-        question="Quanto é depositado na sua conta todo mês? (somando todas as fontes)"
+        question="Quanto é depositado na sua conta todo mês (somando todas as fontes)?"
+        inputProps={{
+          type: 'text',
+          placeholder: 'ex: 5.000,00',
+          prefix: 'R$',
+        }}
       />
     </>
   )
