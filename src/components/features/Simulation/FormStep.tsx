@@ -36,6 +36,7 @@ export const FormStep = ({
 
   const handleSubmit = (e: SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault()
+    if (!inputValue) return
     onNext()
   }
 
