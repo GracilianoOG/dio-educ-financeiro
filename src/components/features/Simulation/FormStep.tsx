@@ -28,6 +28,7 @@ export const FormStep = ({
   question,
   inputProps,
   submitButtonProps,
+  hideBackButton,
   onBack,
   onNext,
 }: FormStepProps & ActionsButtonsProps) => {
@@ -48,15 +49,17 @@ export const FormStep = ({
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <Input {...inputProps} />
         <div className="flex flex-col gap-3 sm:flex-row sm:gap-6">
-          <Button
-            type="button"
-            onClick={onBack}
-            variant="ghost"
-            icon={ArrowLeft}
-            className="order-2 flex-1 justify-center rounded-xl py-3 sm:order-1"
-          >
-            Voltar
-          </Button>
+          {!hideBackButton && (
+            <Button
+              type="button"
+              onClick={onBack}
+              variant="ghost"
+              icon={ArrowLeft}
+              className="order-2 flex-1 justify-center rounded-xl py-3 sm:order-1"
+            >
+              Voltar
+            </Button>
+          )}
           <Button
             type="submit"
             variant="primary"
