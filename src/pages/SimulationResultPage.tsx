@@ -1,4 +1,4 @@
-import { CalendarClock, Goal, PiggyBank } from 'lucide-react'
+import { CalendarClock, CreditCardIcon, Goal, Landmark, PiggyBank, Wallet } from 'lucide-react'
 
 import { Card } from '@/components/features/SimulationResults/Card'
 import { PageHero } from '@/components/shared/PageHero'
@@ -39,6 +39,28 @@ export const SimulationResultPage = () => {
           value={`R$ ${monthlySavings.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`}
           subtitle={'Economia mensal necessária'}
         />
+      </div>
+      <div className="grid gap-6 lg:grid-cols-3">
+        <div className="order-1 flex flex-col gap-6 lg:order-2">
+          <Card
+            icon={Wallet}
+            label="Renda mensal"
+            value={data.income}
+            subtitle={'Renda total bruta por mês'}
+          />
+          <Card
+            icon={CreditCardIcon}
+            label="Custos Fixos de Vida"
+            value={data.expenses}
+            subtitle={'Gastos essenciais por mês'}
+          />
+          <Card
+            icon={Landmark}
+            label="Dívidas / Parcelas"
+            value={data.debts}
+            subtitle={'Valor comprometido em parcelas/depósito'}
+          />
+        </div>
       </div>
     </main>
   )
