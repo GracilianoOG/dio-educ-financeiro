@@ -1,8 +1,9 @@
-import { CalendarClock, Goal } from 'lucide-react'
+import { CalendarClock, Goal, PiggyBank } from 'lucide-react'
 
 import { Card } from '@/components/features/SimulationResults/Card'
 import { PageHero } from '@/components/shared/PageHero'
 import type { SimulationFormData } from '@/data/simulation'
+import { calcMonthlySavings } from '@/utils/simulation'
 
 const mock: SimulationFormData = {
   income: 'R$ 5.000,00',
@@ -15,6 +16,7 @@ const mock: SimulationFormData = {
 
 export const SimulationResultPage = () => {
   const data: SimulationFormData = mock
+  const monthlySavings = calcMonthlySavings(data)
 
   return (
     <main className="mx-auto max-w-6xl px-4 py-10 sm:py-14">
@@ -29,6 +31,13 @@ export const SimulationResultPage = () => {
           label="Prazo"
           value={`${data.goalDeadline} meses`}
           subtitle={'Prazo para atingir a meta'}
+        />
+        <Card
+          variant="primary"
+          icon={PiggyBank}
+          label="Economia mensal"
+          value={`R$ ${monthlySavings.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`}
+          subtitle={'Economia mensal necessária'}
         />
       </div>
     </main>
