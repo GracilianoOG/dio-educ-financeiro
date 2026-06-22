@@ -40,7 +40,13 @@ code .
 npm install
 ```
 
-5. Rode o projeto em modo de desenvolvimento:
+5. Copie sua chave de API do [Google AI Studio](https://aistudio.google.com) e cole em um arquivo `.env` como demonstrado no `.env.example`:
+
+```js
+VITE_GEMINI_API_KEY=Sua chave aqui
+```
+
+6. Rode o projeto em modo de desenvolvimento:
 
 ```bash
 npm run dev
