@@ -4,9 +4,9 @@
 
 <div align="center">
 
-![GitHub Repo stars](https://img.shields.io/github/stars/GracilianoOG/dio-educ-financeiro?style=flat-square)
-![GitHub forks](https://img.shields.io/github/forks/GracilianoOG/dio-educ-financeiro?style=flat-square)
-![GitHub license](https://img.shields.io/github/license/GracilianoOG/dio-educ-financeiro?style=flat-square)
+![GitHub Repo stars](https://img.shields.io/github/stars/gracilianoog/dio-educ-financeiro?style=flat-square)
+![GitHub forks](https://img.shields.io/github/forks/gracilianoog/dio-educ-financeiro?style=flat-square)
+![GitHub license](https://img.shields.io/github/license/gracilianoog/dio-educ-financeiro?style=flat-square)
 
 </div>
 
