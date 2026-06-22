@@ -89,6 +89,7 @@ Organização do código fonte na pasta `src`:
 - [TypeScript](https://www.typescriptlang.org/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [Tailwind + Vite](https://tailwindcss.com/docs/installation/using-vite)
+- [AI Studio](https://aistudio.google.com)
 
 ## 🧑🏻‍💻 Autor
 
