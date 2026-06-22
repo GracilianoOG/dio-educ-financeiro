@@ -1,73 +1,101 @@
-# React + TypeScript + Vite
+# ✨ Educador Financeiro com IA Generativa
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![](./screenshots/preview.png)
 
-Currently, two official plugins are available:
+<div align="center">
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![GitHub Repo stars](https://img.shields.io/github/stars/GracilianoOG/dio-educ-financeiro?style=flat-square)
+![GitHub forks](https://img.shields.io/github/forks/GracilianoOG/dio-educ-financeiro?style=flat-square)
+![GitHub license](https://img.shields.io/github/license/GracilianoOG/dio-educ-financeiro?style=flat-square)
 
-## React Compiler
+</div>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📖 Descrição
 
-## Expanding the ESLint configuration
+Desenvolvi esse projeto durante a jornada **"Santander 2026 - AI React Front-end"** utilizando **React** e **TypeScript** na produção do projeto. O educador financeiro utiliza IA Generativa (Gemini) para gerar os insights de forma estruturada e resumida. Esse foi o meu primeiro projeto desenvolvido integrando IA Generativa no próprio programa.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📦 Setup Inicial
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1. Clone o repositório:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/GracilianoOG/dio-educ-financeiro.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Entre no diretório:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd dio-educ-financeiro/
 ```
+
+3. Inicie sua IDE (uso o VSCode):
+
+```bash
+code .
+```
+
+4. Instale as dependencias:
+
+```bash
+npm install
+```
+
+5. Rode o projeto em modo de desenvolvimento:
+
+```bash
+npm run dev
+```
+
+## 📜 Scripts Disponíveis
+
+| Script            | Description                                     |
+| ----------------- | ----------------------------------------------- |
+| `npm run dev`     | Roda o projeto em modo de desenvolvimento.      |
+| `npm run build`   | Gera a versão final para a produção.            |
+| `npm run preview` | Roda a versão de produção para pré-visualização |
+
+## 🗂️ Estrutura do Projeto
+
+Organização do código fonte na pasta `src`:
+
+```bash
+📁 assets/
+📁 components/
+📁 context/
+📁 data/       # Simulações e o prompt base da IA
+📁 hooks/
+📁 pages/
+📁 services/
+📁 styles/
+📁 utils/
+📄 router.tsx  # Rotas da aplicação (home, resultado, etc.)
+```
+
+## 🛠️ Ferramentas e Metodologias
+
+[![Ferramentas e Metodologias](https://skillicons.dev/icons?i=react,typescript,tailwind,vite,vscode)](https://skillicons.dev)
+
+- HTML Semântico
+- Estilizado com TailwindCSS
+- Projeto construído com ViteJS
+- Desenvolvido em TypeScript
+- Layout responsivo
+
+## 🔗 Recursos e Links
+
+- [Digital Innovation One](https://www.dio.me/)
+- [React](https://react.dev/learn)
+- [ViteJS](https://vite.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Tailwind + Vite](https://tailwindcss.com/docs/installation/using-vite)
+
+## 🧑🏻‍💻 Autor
+
+| [<img src="https://avatars.githubusercontent.com/u/72778164?s=96&v=4"><br><sub>GracilianoOG</sub>](https://github.com/GracilianoOG) |
+| :---------------------------------------------------------------------------------------------------------------------------------: |
+|                                       [Linkedin](https://www.linkedin.com/in/gabrielgmbarros)                                       |
+
+## 📝 Licença
+
+O código fonte está sob a licença [MIT](./LICENSE).
