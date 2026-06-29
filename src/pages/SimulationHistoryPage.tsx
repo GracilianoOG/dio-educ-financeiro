@@ -7,7 +7,11 @@ export const SimulationHistoryPage = () => {
         title="Histórico de simulações"
         subtitle="Com base no seu perfil financeiro e objetivos."
       />
-      <div></div>
+      <div>
+        <div className="bg-card rounded-[22px] p-8 shadow-[4px_4px_18px_0px_rgba(0,0,0,0.2)]">
+          test
+        </div>
+      </div>
     </div>
   )
 }
