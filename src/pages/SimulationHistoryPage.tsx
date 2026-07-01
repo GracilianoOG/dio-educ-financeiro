@@ -37,12 +37,12 @@ export const SimulationHistoryPage = () => {
             <p className="text-foreground text-base font-semibold">R$ 1.250,00</p>
           </div>
           <Divider spacing={0} />
-          <div className="flex flex-row">
-            <Button variant="ghost">
+          <div className="flex flex-row justify-between">
+            <Button className="flex-1" variant="ghost">
               <Trash2 className="text-red-500" size={24} />
             </Button>
             <Divider orientation="vertical" />
-            <Button icon={ExternalLink} variant="ghost">
+            <Button className="flex-1" icon={ExternalLink} variant="ghost">
               Ver detalhes
             </Button>
           </div>
