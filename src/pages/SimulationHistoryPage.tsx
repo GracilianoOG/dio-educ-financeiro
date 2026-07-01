@@ -42,7 +42,7 @@ export const SimulationHistoryPage = () => {
               <Trash2 className="text-red-500" size={24} />
             </Button>
             <Divider orientation="vertical" />
-            <Button className="flex-1" icon={ExternalLink} variant="ghost">
+            <Button className="flex-1 text-nowrap" icon={ExternalLink} variant="ghost">
               Ver detalhes
             </Button>
           </div>
