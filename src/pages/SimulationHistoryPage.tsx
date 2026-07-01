@@ -10,7 +10,7 @@ export const SimulationHistoryPage = () => {
         subtitle="Com base no seu perfil financeiro e objetivos."
       />
       <div>
-        <div className="bg-card rounded-[22px] p-8 shadow-[4px_4px_18px_0px_rgba(0,0,0,0.2)]">
+        <div className="bg-card flex flex-col gap-6 rounded-[22px] p-8 shadow-[4px_4px_18px_0px_rgba(0,0,0,0.2)]">
           <div className="flex size-10 items-center justify-center rounded-[10.67px] bg-[#ECE5F8]">
             <Goal size={26} className="text-primary" />
           </div>
