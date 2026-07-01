@@ -15,19 +15,23 @@ export const SimulationHistoryPage = () => {
             <Goal size={26} className="text-primary" />
           </div>
           <div>
-            <p className="text-foreground text-base font-semibold">Viagem para o Japão</p>
+            <p className="text-foreground mb-1 text-base font-semibold">Viagem para o Japão</p>
             <p className="text-muted-foreground text-sm">24/02/2026</p>
           </div>
           <div>
-            <p className="text-muted-foreground text-xs font-semibold uppercase">Custo da meta</p>
+            <p className="text-muted-foreground mb-1 text-xs font-semibold uppercase">
+              Custo da meta
+            </p>
             <p className="text-foreground text-base font-semibold">R$ 15.000,00</p>
           </div>
           <div>
-            <p className="text-muted-foreground text-xs font-semibold uppercase">Prazo</p>
+            <p className="text-muted-foreground mb-1 text-xs font-semibold uppercase">Prazo</p>
             <p className="text-foreground text-base font-semibold">12 meses</p>
           </div>
           <div>
-            <p className="text-muted-foreground text-xs font-semibold uppercase">Economia mensal</p>
+            <p className="text-muted-foreground mb-1 text-xs font-semibold uppercase">
+              Economia mensal
+            </p>
             <p className="text-foreground text-base font-semibold">R$ 1.250,00</p>
           </div>
         </div>
