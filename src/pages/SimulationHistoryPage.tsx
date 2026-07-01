@@ -14,6 +14,10 @@ export const SimulationHistoryPage = () => {
           <div className="flex size-10 items-center justify-center rounded-[10.67px] bg-[#ECE5F8]">
             <Goal size={26} className="text-primary" />
           </div>
+          <div>
+            <p className="text-foreground text-base">Viagem para o Japão</p>
+            <p className="text-muted-foreground text-sm">24/02/2026</p>
+          </div>
         </div>
       </div>
     </div>
