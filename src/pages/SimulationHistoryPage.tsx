@@ -1,5 +1,6 @@
-import { Goal } from 'lucide-react'
+import { Goal, Trash2 } from 'lucide-react'
 
+import { Button } from '@/components/shared/Button'
 import { Divider } from '@/components/shared/Divider'
 import { PageHero } from '@/components/shared/PageHero'
 
@@ -36,6 +37,11 @@ export const SimulationHistoryPage = () => {
             <p className="text-foreground text-base font-semibold">R$ 1.250,00</p>
           </div>
           <Divider spacing={0} />
+          <div>
+            <Button variant="ghost">
+              <Trash2 className="text-red-500" size={24} />
+            </Button>
+          </div>
         </div>
       </div>
     </main>
