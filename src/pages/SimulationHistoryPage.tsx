@@ -26,6 +26,10 @@ export const SimulationHistoryPage = () => {
             <p className="text-muted-foreground text-xs font-semibold uppercase">Prazo</p>
             <p className="text-foreground text-base font-semibold">12 meses</p>
           </div>
+          <div>
+            <p className="text-muted-foreground text-xs font-semibold uppercase">Economia mensal</p>
+            <p className="text-foreground text-base font-semibold">R$ 1.250,00</p>
+          </div>
         </div>
       </div>
     </main>
