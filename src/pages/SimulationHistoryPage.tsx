@@ -1,5 +1,6 @@
 import { Goal } from 'lucide-react'
 
+import { Divider } from '@/components/shared/Divider'
 import { PageHero } from '@/components/shared/PageHero'
 
 export const SimulationHistoryPage = () => {
@@ -34,6 +35,7 @@ export const SimulationHistoryPage = () => {
             </p>
             <p className="text-foreground text-base font-semibold">R$ 1.250,00</p>
           </div>
+          <Divider spacing={0} />
         </div>
       </div>
     </main>
