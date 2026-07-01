@@ -15,7 +15,7 @@ export const SimulationHistoryPage = () => {
             <Goal size={26} className="text-primary" />
           </div>
           <div>
-            <p className="text-foreground text-base">Viagem para o Japão</p>
+            <p className="text-foreground text-base font-semibold">Viagem para o Japão</p>
             <p className="text-muted-foreground text-sm">24/02/2026</p>
           </div>
           <div>
