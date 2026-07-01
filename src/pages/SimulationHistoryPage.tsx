@@ -1,4 +1,4 @@
-import { Goal, Trash2 } from 'lucide-react'
+import { ExternalLink, Goal, Trash2 } from 'lucide-react'
 
 import { Button } from '@/components/shared/Button'
 import { Divider } from '@/components/shared/Divider'
@@ -42,6 +42,9 @@ export const SimulationHistoryPage = () => {
               <Trash2 className="text-red-500" size={24} />
             </Button>
             <Divider orientation="vertical" />
+            <Button icon={ExternalLink} variant="ghost">
+              Ver detalhes
+            </Button>
           </div>
         </div>
       </div>
