@@ -40,6 +40,7 @@ export const SimulationHistoryPage = () => {
           <div>
             <Button variant="ghost">
               <Trash2 className="text-red-500" size={24} />
+              <Divider orientation="vertical" />
             </Button>
           </div>
         </div>
