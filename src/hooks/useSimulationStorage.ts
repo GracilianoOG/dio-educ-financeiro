@@ -15,6 +15,17 @@ export const useSimulationStorage = () => {
     return id
   }
 
+  const getAllFormData = (): SimulationRecord[] | null => {
+    const storage = localStorage.getItem(LOCAL_STORAGE_KEY)
+
+    if (!storage) {
+      return null
+    }
+
+    const savedData = JSON.parse(storage) as SimulationRecord[]
+    return savedData
+  }
+
   const getFormData = (id: string): SimulationRecord | null => {
     const storage = localStorage.getItem(LOCAL_STORAGE_KEY)
 
@@ -35,5 +46,5 @@ export const useSimulationStorage = () => {
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(updated))
   }
 
-  return { saveFormData, getFormData, updateSimulation }
+  return { saveFormData, getFormData, getAllFormData, updateSimulation }
 }
