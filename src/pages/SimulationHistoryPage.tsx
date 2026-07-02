@@ -3,6 +3,8 @@ import { useState } from 'react'
 import Card from '@/components/features/History/Card'
 import { PageHero } from '@/components/shared/PageHero'
 import { useSimulationStorage } from '@/hooks/useSimulationStorage'
+import { formatToReal } from '@/utils/currency'
+import { calcMonthlySavings } from '@/utils/simulation'
 
 export const SimulationHistoryPage = () => {
   const { deleteFormData, getAllFormData } = useSimulationStorage()
@@ -28,7 +30,7 @@ export const SimulationHistoryPage = () => {
             date={'01/01/2000'}
             goalCost={data.goalAmount}
             months={data.goalDeadline}
-            savings={data.income}
+            savings={formatToReal(calcMonthlySavings(data))}
             onDelete={() => handleDelete(data.id)}
           />
         ))}
