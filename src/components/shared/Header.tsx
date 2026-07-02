@@ -18,7 +18,7 @@ export const Header = () => {
           <div className="bg-primary flex h-9 w-9 items-center justify-center rounded-full">
             <Wallet size={20} className="text-primary-foreground" />
           </div>
-          <span className="text-lg">
+          <span className="max-xs:hidden text-lg">
             <span className="text-muted-foreground font-medium">Planej</span>
             <span className="font-extrabold">.ai</span>
           </span>
