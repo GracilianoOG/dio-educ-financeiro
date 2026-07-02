@@ -16,6 +16,18 @@
   }
 }
 
+@utility button-primary {
+  @apply bg-primary text-primary-foreground rounded-xl font-semibold;
+}
+
+@utility button-secondary {
+  @apply bg-secondary-button border-border rounded-3xl border;
+}
+
+@utility button-ghost {
+  @apply text-foreground rounded-lg;
+}
+
 .lucide {
   stroke-width: 1.5;
 }
