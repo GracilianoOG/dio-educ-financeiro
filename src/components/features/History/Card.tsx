@@ -23,23 +23,25 @@ const Card = ({ id, goalName, date, goalCost, months, savings, onDelete }: CardP
         <Goal size={26} className="text-primary" />
       </div>
       <div>
-        <p className="text-foreground mb-1 text-base font-semibold">{goalName}</p>
+        <h2 className="text-foreground mb-1 text-base font-semibold">{goalName}</h2>
         <p className="text-muted-foreground text-sm">{date}</p>
       </div>
       <div>
-        <p className="text-muted-foreground mb-1 text-xs font-semibold uppercase">Custo da meta</p>
+        <h3 className="text-muted-foreground mb-1 text-xs font-semibold uppercase">
+          Custo da meta
+        </h3>
         <p className="text-foreground text-base font-semibold">R$ {goalCost}</p>
       </div>
       <div>
-        <p className="text-muted-foreground mb-1 text-xs font-semibold uppercase">Prazo</p>
+        <h3 className="text-muted-foreground mb-1 text-xs font-semibold uppercase">Prazo</h3>
         <p className="text-foreground text-base font-semibold">
           {months} {Number(months) > 1 ? 'meses' : 'mês'}
         </p>
       </div>
       <div>
-        <p className="text-muted-foreground mb-1 text-xs font-semibold uppercase">
+        <h3 className="text-muted-foreground mb-1 text-xs font-semibold uppercase">
           Economia mensal
-        </p>
+        </h3>
         <p className="text-foreground text-base font-semibold">R$ {savings}</p>
       </div>
       <Divider spacing={0} className="lg:hidden" />
