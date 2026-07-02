@@ -18,7 +18,7 @@ const Card = ({ id, goalName, date, goalCost, months, savings, onDelete }: CardP
   const navigate = useNavigate()
 
   return (
-    <div className="bg-card flex flex-col gap-6 rounded-[22px] p-8 shadow-[4px_4px_18px_0px_rgba(0,0,0,0.2)] lg:flex-row lg:items-center lg:justify-between">
+    <div className="bg-card grid gap-6 rounded-[22px] p-8 shadow-[4px_4px_18px_0px_rgba(0,0,0,0.2)] lg:grid-cols-[3.75rem_repeat(5,1fr)] lg:flex-row lg:items-center lg:justify-between">
       <div className="flex size-10 items-center justify-center rounded-[10.67px] bg-[#ECE5F8]">
         <Goal size={26} className="text-primary" />
       </div>
