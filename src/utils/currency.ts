@@ -18,10 +18,7 @@ export const formatCurrencyMask = (value: string): string => {
     return ''
   }
 
-  return number.toLocaleString('pt-BR', {
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2,
-  })
+  return formatToReal(number)
 }
 
 export const parseCurrency = (value: string): number => {
