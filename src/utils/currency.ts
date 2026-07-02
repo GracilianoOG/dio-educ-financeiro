@@ -1,3 +1,10 @@
+export const formatToReal = (value: number): string => {
+  return value.toLocaleString('pt-BR', {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  })
+}
+
 export const formatCurrencyMask = (value: string): string => {
   const digits = value.replace(/\D/g, '')
 
