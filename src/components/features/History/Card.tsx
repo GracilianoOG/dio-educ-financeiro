@@ -22,8 +22,8 @@ const Card = ({ id, goalName, date, goalCost, months, savings, onDelete }: CardP
       <div className="flex size-10 items-center justify-center rounded-[10.67px] bg-[#ECE5F8]">
         <Goal size={26} className="text-primary" />
       </div>
-      <div>
-        <h2 className="text-foreground mb-1 text-base font-semibold">{goalName}</h2>
+      <div className="min-w-0">
+        <h2 className="text-foreground mb-1 truncate text-base font-semibold">{goalName}</h2>
         <p className="text-muted-foreground text-sm">{date}</p>
       </div>
       <div>
