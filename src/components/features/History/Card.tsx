@@ -45,7 +45,7 @@ const Card = ({ id, goalName, date, goalCost, months, savings, onDelete }: CardP
         <p className="text-foreground text-base font-semibold">R$ {savings}</p>
       </div>
       <Divider spacing={0} className="lg:hidden" />
-      <div className="flex flex-row justify-between">
+      <div className="flex flex-row items-center justify-between">
         <Button className="flex-1" variant="ghost" onClick={onDelete}>
           <Trash2 className="text-red-500" size={24} />
         </Button>
