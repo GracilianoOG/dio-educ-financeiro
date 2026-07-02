@@ -31,7 +31,9 @@ const Card = ({ id, goalName, date, goalCost, months, savings }: CardProps) => {
       </div>
       <div>
         <p className="text-muted-foreground mb-1 text-xs font-semibold uppercase">Prazo</p>
-        <p className="text-foreground text-base font-semibold">{months} meses</p>
+        <p className="text-foreground text-base font-semibold">
+          {months} {Number(months) > 1 ? 'meses' : 'mês'}
+        </p>
       </div>
       <div>
         <p className="text-muted-foreground mb-1 text-xs font-semibold uppercase">
