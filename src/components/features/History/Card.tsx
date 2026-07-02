@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 
 import { Button } from '@/components/shared/Button'
 import { Divider } from '@/components/shared/Divider'
+import { switchMonthPlural } from '@/utils/date'
 
 interface CardProps {
   id: string
@@ -35,7 +36,7 @@ const Card = ({ id, goalName, date, goalCost, months, savings, onDelete }: CardP
       <div>
         <h3 className="text-muted-foreground mb-1 text-xs font-semibold uppercase">Prazo</h3>
         <p className="text-foreground text-base font-semibold">
-          {months} {Number(months) > 1 ? 'meses' : 'mês'}
+          {months} {switchMonthPlural(months)}
         </p>
       </div>
       <div>

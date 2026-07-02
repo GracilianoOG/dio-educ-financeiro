@@ -6,6 +6,7 @@ import { Card } from '@/components/features/SimulationResults/Card'
 import { PageHero } from '@/components/shared/PageHero'
 import { useSimulationStorage } from '@/hooks/useSimulationStorage'
 import { formatToReal } from '@/utils/currency'
+import { switchMonthPlural } from '@/utils/date'
 import { calcMonthlySavings } from '@/utils/simulation'
 
 export const SimulationResultPage = () => {
@@ -30,7 +31,7 @@ export const SimulationResultPage = () => {
         <Card
           icon={CalendarClock}
           label="Prazo"
-          value={`${data.goalDeadline} meses`}
+          value={`${data.goalDeadline} ${switchMonthPlural(data.goalDeadline)}`}
           subtitle={'Prazo para atingir a meta'}
         />
         <Card
