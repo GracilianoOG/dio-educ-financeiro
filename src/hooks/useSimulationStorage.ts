@@ -40,5 +40,16 @@ export const useSimulationStorage = () => {
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(updated))
   }
 
-  return { saveFormData, getFormData, getAllFormData, updateSimulation }
+  const deleteFormData = (id: string) => {
+    const savedData = getAllFormData()
+
+    if (!savedData) {
+      return
+    }
+
+    const updatedData = savedData.filter((record) => record.id !== id)
+    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify([...updatedData]))
+  }
+
+  return { saveFormData, getFormData, getAllFormData, updateSimulation, deleteFormData }
 }
