@@ -4,6 +4,7 @@ import Card from '@/components/features/History/Card'
 import { PageHero } from '@/components/shared/PageHero'
 import { useSimulationStorage } from '@/hooks/useSimulationStorage'
 import { formatToReal } from '@/utils/currency'
+import { formatDate } from '@/utils/date'
 import { calcMonthlySavings } from '@/utils/simulation'
 
 export const SimulationHistoryPage = () => {
@@ -27,7 +28,7 @@ export const SimulationHistoryPage = () => {
             key={data.id}
             id={data.id}
             goalName={data.goalName}
-            date={'01/01/2000'}
+            date={formatDate(data.date)}
             goalCost={data.goalAmount}
             months={data.goalDeadline}
             savings={formatToReal(calcMonthlySavings(data))}
