@@ -47,7 +47,7 @@ const Card = ({ id, goalName, date, goalCost, months, savings, onDelete }: CardP
         <Button className="flex-1" variant="ghost" onClick={onDelete}>
           <Trash2 className="text-red-500" size={24} />
         </Button>
-        <Divider orientation="vertical" />
+        <Divider orientation="vertical" className="lg:-order-1" />
         <Button
           className="flex-1 text-nowrap"
           icon={ExternalLink}
