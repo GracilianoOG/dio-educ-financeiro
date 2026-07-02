@@ -11,9 +11,10 @@ interface CardProps {
   goalCost: string
   months: string
   savings: string
+  onDelete: () => void
 }
 
-const Card = ({ id, goalName, date, goalCost, months, savings }: CardProps) => {
+const Card = ({ id, goalName, date, goalCost, months, savings, onDelete }: CardProps) => {
   const navigate = useNavigate()
 
   return (
@@ -43,7 +44,7 @@ const Card = ({ id, goalName, date, goalCost, months, savings }: CardProps) => {
       </div>
       <Divider spacing={0} />
       <div className="flex flex-row justify-between">
-        <Button className="flex-1" variant="ghost">
+        <Button className="flex-1" variant="ghost" onClick={onDelete}>
           <Trash2 className="text-red-500" size={24} />
         </Button>
         <Divider orientation="vertical" />
