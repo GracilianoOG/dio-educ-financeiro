@@ -1,9 +1,11 @@
 import { ExternalLink, Goal, Trash2 } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
 
 import { Button } from '@/components/shared/Button'
 import { Divider } from '@/components/shared/Divider'
 
 interface CardProps {
+  id: string
   goalName: string
   date: string
   goalCost: string
@@ -11,7 +13,9 @@ interface CardProps {
   savings: string
 }
 
-const Card = ({ goalName, date, goalCost, months, savings }: CardProps) => {
+const Card = ({ id, goalName, date, goalCost, months, savings }: CardProps) => {
+  const navigate = useNavigate()
+
   return (
     <div className="bg-card flex flex-col gap-6 rounded-[22px] p-8 shadow-[4px_4px_18px_0px_rgba(0,0,0,0.2)]">
       <div className="flex size-10 items-center justify-center rounded-[10.67px] bg-[#ECE5F8]">
@@ -41,7 +45,12 @@ const Card = ({ goalName, date, goalCost, months, savings }: CardProps) => {
           <Trash2 className="text-red-500" size={24} />
         </Button>
         <Divider orientation="vertical" />
-        <Button className="flex-1 text-nowrap" icon={ExternalLink} variant="ghost">
+        <Button
+          className="flex-1 text-nowrap"
+          icon={ExternalLink}
+          variant="ghost"
+          onClick={() => navigate(`/resultado/${id}`)}
+        >
           Ver detalhes
         </Button>
       </div>
