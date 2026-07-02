@@ -16,7 +16,7 @@ export const SimulationHistoryPage = () => {
   }
 
   return (
-    <main className="mb-24px px-4 py-8">
+    <main className="mb-24px mx-auto max-w-7xl px-4 py-8">
       <PageHero
         title="Histórico de simulações"
         subtitle="Com base no seu perfil financeiro e objetivos."
