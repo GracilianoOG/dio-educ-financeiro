@@ -21,7 +21,7 @@ export const SimulationHistoryPage = () => {
         title="Histórico de simulações"
         subtitle="Com base no seu perfil financeiro e objetivos."
       />
-      <div className="flex flex-col gap-6">
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-1">
         {insights?.map((data) => (
           <Card
             key={data.id}
