@@ -5,6 +5,7 @@ import { AIInsightsCard } from '@/components/features/SimulationResults/AIInsigh
 import { Card } from '@/components/features/SimulationResults/Card'
 import { PageHero } from '@/components/shared/PageHero'
 import { useSimulationStorage } from '@/hooks/useSimulationStorage'
+import { formatToReal } from '@/utils/currency'
 import { calcMonthlySavings } from '@/utils/simulation'
 
 export const SimulationResultPage = () => {
@@ -36,7 +37,7 @@ export const SimulationResultPage = () => {
           variant="primary"
           icon={PiggyBank}
           label="Economia mensal"
-          value={`R$ ${monthlySavings.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`}
+          value={`R$ ${formatToReal(monthlySavings)}`}
           subtitle={'Economia mensal necessária'}
         />
       </div>
