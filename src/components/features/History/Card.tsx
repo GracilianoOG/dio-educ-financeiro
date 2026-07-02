@@ -51,7 +51,7 @@ const Card = ({ id, goalName, date, goalCost, months, savings, onDelete }: CardP
         </Button>
         <Divider orientation="vertical" className="lg:-order-1" />
         <Button
-          className="flex-1 text-nowrap"
+          className="lg:button-secondary flex-1 text-nowrap"
           icon={ExternalLink}
           variant="ghost"
           onClick={() => navigate(`/resultado/${id}`)}
